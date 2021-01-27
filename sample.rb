@@ -6,10 +6,9 @@ class SampleTest < Minitest::Test
   def create_pdf
     combined_pdf = CombinePDF.new
     file_path = './sample.pdf'
-    pdf_path = open(file_path).path
-    combined_pdf << CombinePDF.load(pdf_path)
-    save_path = './sample-2.pdf'
-    combined_pdf << CombinePDF.load(save_path)
+    combined_pdf << CombinePDF.load(file_path)
+    file_2_path = './sample-2.pdf'
+    combined_pdf << CombinePDF.load(file_2_path)
     combined_pdf.save './saved.pdf'
   end
 
