@@ -1,0 +1,28 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    Ascii85 (1.0.3)
+    afm (0.2.2)
+    combine_pdf (1.0.21)
+      ruby-rc4 (>= 0.1.5)
+    hashery (2.1.2)
+    minitest (5.14.3)
+    pdf-reader (2.4.1)
+      Ascii85 (~> 1.0.0)
+      afm (~> 0.2.1)
+      hashery (~> 2.0)
+      ruby-rc4
+      ttfunk
+    ruby-rc4 (0.1.5)
+    ttfunk (1.7.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  combine_pdf (= 1.0.21)
+  minitest
+  pdf-reader
+
+BUNDLED WITH
+   2.1.4
